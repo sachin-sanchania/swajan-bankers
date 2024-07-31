@@ -8,7 +8,12 @@ use Livewire\Component;
 
 class Home extends Component
 {
-    public $name, $email, $subject, $message, $phone;
+    public $name, $email, $subject, $message, $phone, $events;
+
+    public function mount()
+    {
+        $this->events = \App\Models\Events::query()->where('status', 1)->first();
+    }
 
     public function render()
     {

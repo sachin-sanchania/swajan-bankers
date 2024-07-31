@@ -1,5 +1,5 @@
 (function ($) {
-	
+
 	"use strict";
 
 	// Page loading animation
@@ -76,7 +76,7 @@
 
 	// Menu Dropdown Toggle
 	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
+		$(".menu-trigger").on('click', function() {
 			$(this).toggleClass('active');
 			$('.header-area .nav').slideToggle(200);
 		});
@@ -92,8 +92,8 @@
 				var width = $(window).width();
 				if(width < 991) {
 					$('.menu-trigger').removeClass('active');
-					$('.header-area .nav').slideUp(200);	
-				}				
+					$('.header-area .nav').slideUp(200);
+				}
 				$('html,body').animate({
 					scrollTop: (target.offset().top) - 80
 				}, 700);
@@ -120,7 +120,19 @@
 			}, 300);
 		});
 	});
-    
+
 
 
 })(window.jQuery);
+
+function convertImageName(imageName) {
+    // Find the last occurrence of the dot
+    const dotIndex = imageName.lastIndexOf('.');
+
+    // Split the name into filename and extension
+    const fileName = imageName.substring(0, dotIndex);
+    const extension = imageName.substring(dotIndex + 1);
+
+    // Construct the new name
+    return `${fileName}@lg.${extension}`;
+}

@@ -223,50 +223,105 @@
     </div>
 
     <section class="py-3 py-md-5">
-        <div class="container">
-            <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-6">
-                    <img class="img-fluid rounded" loading="lazy" src="{{asset('client/assets/images/event.jpg')}}" style="border-radius: 15px !important;" alt="Event">
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="row justify-content-xl-center">
-                        <div class="col-12 col-xl-11">
-                            <div class="section-heading mb-3">
-                                <h6>| Events</h6>
-                            </div>
-                            <p class="mb-5 fs-16">We are thrilled to announce the upcoming Swajan Bankers Community Event, set to launch soon! Join us for an enriching experience filled with networking opportunities, insightful discussions, and engaging activities.</p>
-                            <div class="row">
-                                <div class="col-md-6 d-flex">
-                                    <div class="me-4 text-swajan">
-                                        <svg width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
-                                        </svg>
+        @if(!empty($events))
+            <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid rounded" loading="lazy" src="uploads/events/{{$events->image_path}}" style="border-radius: 15px !important;" alt="{{$events->title}}">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-12 col-xl-11">
+                                <div class="section-heading mb-3">
+                                    <h6>| Events</h6>
+                                </div>
+                                <p class="mb-5 fs-16">{{$events->description}}</p>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex">
+                                        <div class="me-4 text-swajan">
+                                            <svg width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 text-swajan">Venue</h4>
+                                            <address class="mb-0 text-secondary fs-16">{{$events->place}}</address>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h4 class="mb-3 text-swajan">Venue</h4>
-                                        <address class="mb-0 text-secondary fs-16">Vadodara, Gujarat (India).</address>
+                                    <div class="col-md-6 d-flex">
+                                        <div class="me-4 text-swajan">
+                                            <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 9H21M9 15L11 17L15 13M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#a33443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 text-swajan">Date</h4>
+                                            <p class="mb-0 fs-16">
+                                                @if(!empty($events->date))
+                                                    {{date('d M, Y', strtotime($events->date))}}
+                                                    @if(!empty($events->time))
+                                                        {{date('h:i: A', strtotime($events->time))}}
+                                                    @endif
+                                                @else
+                                                    Launching Soon...
+                                                @endif
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 d-flex">
-                                    <div class="me-4 text-swajan">
-                                        <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 9H21M9 15L11 17L15 13M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#a33443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                                    </div>
-                                    <div>
-                                        <h4 class="mb-3 text-swajan">Date</h4>
-                                        <p class="mb-0 fs-16">
-                                            Launching Soon...
-                                        </p>
-                                    </div>
+                                <div class="icon-button my-5 text-end">
+                                    <a wire:navigate href="{{route('front.contact-us')}}"><i class="fa fa-fire"></i> Join Us / Celebrate Wisdom</a>
                                 </div>
-                            </div>
-                            <div class="icon-button my-5 text-end">
-                                <a wire:navigate href="{{route('front.contact-us')}}"><i class="fa fa-fire"></i> Join Us / Celebrate Wisdom</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        @else
+            <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid rounded" loading="lazy" src="{{asset('client/assets/images/event.jpg')}}" style="border-radius: 15px !important;" alt="Event">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-12 col-xl-11">
+                                <div class="section-heading mb-3">
+                                    <h6>| Events</h6>
+                                </div>
+                                <p class="mb-5 fs-16">We are thrilled to announce the upcoming Swajan Bankers Community Event, set to launch soon! Join us for an enriching experience filled with networking opportunities, insightful discussions, and engaging activities.</p>
+                                <div class="row">
+                                    <div class="col-md-6 d-flex">
+                                        <div class="me-4 text-swajan">
+                                            <svg width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 text-swajan">Venue</h4>
+                                            <address class="mb-0 text-secondary fs-16">Vadodara, Gujarat (India).</address>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex">
+                                        <div class="me-4 text-swajan">
+                                            <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 9H21M9 15L11 17L15 13M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#a33443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 text-swajan">Date</h4>
+                                            <p class="mb-0 fs-16">
+                                                Launching Soon...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-button my-5 text-end">
+                                    <a wire:navigate href="{{route('front.contact-us')}}"><i class="fa fa-fire"></i> Join Us / Celebrate Wisdom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
+
     </section>
 
     <div class="contact section" style="margin-top: 0px">

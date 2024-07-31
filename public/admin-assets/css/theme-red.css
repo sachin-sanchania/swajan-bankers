@@ -1,0 +1,29 @@
+:root {
+  --primary: #a33443;
+  --primaryHover: #d5363b;
+  --primaryBorder: #c11a1a;
+  --dangerColor: #7c7c7c;
+  --dangerBorder: #565656;
+}
+
+.btn-primary{
+    background-color : var(--primary);
+    border-color:var(--primaryBorder);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus{
+    background-color : var(--primaryHover);
+    border-color:var(--primaryBorder);
+}
+.nav > li.active{
+    border-left: 4px solid var(--primary);
+}
+.btn-danger{
+    background-color: var(--dangerColor);
+    border: var(--dangerBorder);
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open .dropdown-toggle.btn-danger, .btn-danger:active:focus, .btn-danger:active:hover, .btn-danger.active:hover, .btn-danger.active:focus{
+    background-color: #696969;
+}
+.pace .pace-progress{
+    background-color: var(--primary);
+}
