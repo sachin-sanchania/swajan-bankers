@@ -105,7 +105,7 @@
                 <section class="py-4 py-md-5 py-xl-8">
                     <div class="container-fluid overflow-hidden">
                         <div class="row gy-4 gy-lg-0 justify-content-xl-between">
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="widget d-flex justify-content-center">
                                     <a href="{{route('front.index')}}" wire:navigate>
                                         <img src="{{asset('client/assets/images/logo-v.svg')}}" style="width: 100px">
@@ -144,7 +144,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-4">
                                 <div class="widget">
                                     <h4 class="widget-title text-swajan mb-4">Contact Us</h4>
                                     <ul class="list-unstyled">
