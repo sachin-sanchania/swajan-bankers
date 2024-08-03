@@ -34,10 +34,10 @@
                     <div class="content p-2">
                         <h3 class="mb-4 text-swajan">Top Notch Amenities</h3>
                         <p class="text-justify mb-3 fs-16">
-                            Our community incorporates cutting-edge technology to enhance senior life, including completely automated spaces, smart home systems, and transportation options. Access to lifts and transportation is given for safety and convenience. Advanced fault detection systems solve maintenance concerns. Emergency assistance is accessible 24x7, including on-call doctors and rapid reaction teams for medical crises. Wider doors, wheelchair-accessible restrooms, grab bars, and anti-skid surfaces provide a comfortable and secure environment.
+                            Our medical facilities prioritize our residents' health and well-being by providing frequent check-ups, supervision, and preventive treatment. We have a fully equipped comfort care unit that provides fast access to essential care. Our campus has a dedicated rehabilitation facility for seniors that provides specialized programs such as neuro rehab, cardiac rehab, diabetic care, and orthocare. We also offer doctors on call. Regular health screenings and ongoing monitoring are critical to our commitment to providing the best level of care.
                         </p>
                         <p class="text-justify mb-2 fs-16">
-                            In our community, residents enjoy a seamless blend of technology and comfort, creating an ideal living environment for seniors. Our commitment to enhancing the quality of life for our residents is reflected in every detail of our facilities and services like Smart Home Systems, Transportation Services, Accessibility Features, Maintenance and Safety & Dining and Nutrition. By integrating cutting-edge technology, comprehensive health services, and a vibrant social environment, we ensure that our senior residents live their golden years with independence, dignity, and joy.
+                            Our community is deeply committed to the health and well-being of our residents, ensuring they receive the highest standard of medical care through our state-of-the-art facilities and comprehensive services. We prioritize proactive and preventive care, offering a wide range of medical services designed to keep our residents healthy and thriving. We provide frequent health check-ups and continuous supervision to monitor our residents' health and catch any issues early. Our preventive care programs are tailored to each resident's needs, focusing on maintaining optimal health and preventing the onset of illnesses.
                         </p>
                     </div>
                 </div>
@@ -61,10 +61,10 @@
                     <div class="content p-2 ps-lg-5">
                         <h3 class="mb-4 text-swajan">Medical Facilities</h3>
                         <p class="text-justify mb-2 fs-16">
-                            Our medical facilities prioritise our residents' health and well-being by providing frequent check-ups, supervision, and preventive treatment. We have a fully equipped ICU and hospital that provide fast access to critical care. Our campus has a dedicated rehabilitation facility for seniors that provides specialized programs such as neuro rehab, cardiac rehab, diabetic care, and orthocare. We also offer 24/7 emergency care, with swift response teams and doctors on call. Our facilities include a pathology lab and radiological services to ensure appropriate diagnosis and treatment. Regular health screenings and ongoing monitoring are critical to our commitment to providing the best level of care.
+                            Our medical facilities prioritize our residents' health and well-being by providing frequent check-ups, supervision, and preventive treatment. We offer 24/7 emergency care with swift response teams and doctors on call. Our on-site health care services include a fully equipped comfort care unit that ensures fast access to critical care when needed. Our campus also features a dedicated rehabilitation center for seniors, offering specialized programs such as neuro rehab, cardiac rehab, diabetic care, and orthocare. We have a pathology lab and radiological services to ensure appropriate diagnosis and treatment. Regular health screenings and ongoing monitoring are integral to our commitment to providing the best level of care.
                         </p>
                         <p class="text-justify mb-2 fs-16">
-                            Our community is deeply committed to the health and well-being of our residents, ensuring they receive the highest standard of medical care through our state-of-the-art facilities and comprehensive services. We prioritize proactive and preventive care, offering a wide range of medical services designed to keep our residents healthy and thriving. We provide frequent health check-ups and continuous supervision to monitor our residents' health and catch any issues early. Our preventive care programs are tailored to each resident's needs, focusing on maintaining optimal health and preventing the onset of illnesses.
+                            Our community is deeply committed to the health and well-being of our residents, ensuring they receive the highest standard of medical care through our state-of-the-art facilities and comprehensive services. We prioritize proactive and preventive care, offering a wide range of medical services designed to keep our residents healthy and thriving. Frequent health check-ups and continuous supervision help monitor our residents' health and catch any issues early. Our preventive care programs are tailored to each resident's needs, focusing on maintaining optimal health and preventing the onset of illnesses.
                         </p>
                     </div>
                 </div>
@@ -77,11 +77,14 @@
                 <div class="col-md-6 d-flex align-items-center wow fadeInLeft">
                     <div class="content p-2">
                         <h3 class="mb-4 text-swajan">Temple of Spiritual Serenity</h3>
+                        <p class="text-justify mb-3" style="font-size: 18px; font-style: italic">
+                            Swajan’s temple stands as a beacon of spirituality, gratitude, and togetherness.
+                        </p>
+                        <p class="text-justify mb-3 fs-16">
+                            This shared space, nestled amidst the villa community, offers a gathering point for prayer, religious activities, and celebrating festivals as one harmonious family. With its serene ambiance, the temple provides an inviting setting for everyone to come together, fostering a deep sense of connection.
+                        </p>
                         <p class="text-justify mb-3 fs-16">
                             Swajan cultural initiatives stress togetherness and inclusivity in festivals, bringing together people of all ages through a variety of community events. The resident manager and crew work with Swajan to plan events that promote community and cultural awareness. Cultural activities include traditional festivals, religious ceremonies, music and dance performances, art exhibitions, poetry recitals, and storytelling sessions. Swajan also provides workshops and programs to help residents develop new skills and hobbies, such as cooking, language courses, and painting workshops. These activities encourage personal development and social connection, making the celebrations memorable for everyone.
-                        </p>
-                        <p class="text-justify mb-2 fs-16">
-                            Swajan cultural initiatives are at the heart of our community, fostering a sense of togetherness and inclusivity through vibrant and diverse celebrations. We believe in creating an environment where people of all ages can come together to enjoy and appreciate the richness of cultural traditions, making every event a memorable experience. At Swajan, cultural initiatives is the belief that celebrating togetherness and inclusivity enriches the lives of our residents.
                         </p>
                     </div>
                 </div>

@@ -92,7 +92,7 @@
 {{ $slot }}
 <a wire:navigate href="{{route('front.schedule-visit')}}"><img src="{{asset('client/assets/images/appointment.png')}}" alt="" srcset="" class="appointment">
 </a>
-<a href="https://wa.me/919601257566/"><img src="{{asset('client/assets/images/whatsapp.svg')}}" alt="" srcset="" class="whatsapp">
+<a href="https://wa.me/{{str_replace(' ', '', $settings->get('contact_no'))}}/"><img src="{{asset('client/assets/images/whatsapp.svg')}}" alt="" srcset="" class="whatsapp">
 </a>
 <a href="javascript:void(0)">
     <img src="{{asset('client/assets/images/arrow.png')}}" id="backToTop">
