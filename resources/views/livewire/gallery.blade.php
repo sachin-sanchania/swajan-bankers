@@ -29,7 +29,9 @@
                                 <div class="item">
                                     <a href="uploads/gallery/{{$gallery->image_path}}">
                                         <img src="uploads/gallery/thumbnails/{{convertImageName($gallery->image_path)}}" alt="{{$gallery->title}}">
-                                        <div class="caption">{{$gallery->title}}</div>
+                                        @if(!empty($gallery->title))
+                                            <div class="caption">{{$gallery->title}}</div>
+                                        @endif
                                     </a>
                                 </div>
                             </div>
