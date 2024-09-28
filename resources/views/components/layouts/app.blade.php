@@ -75,13 +75,13 @@
                     <li><a wire:navigate href="{{route('front.about-us')}}" class="{{ Request::routeIs('front.about-us') ? 'active' : '' }}">About Us</a></li>
                     <li><a wire:navigate href="{{route('front.gallery')}}" class="{{ Request::routeIs('front.gallery') ? 'active' : '' }}">Gallery</a></li>
                     <li><a wire:navigate href="{{route('front.facilities')}}" class="{{ Request::routeIs('front.facilities') ? 'active' : '' }}">Facilities</a></li>
-{{--                    <li>--}}
-{{--                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Luxury Living <span class="caret"></span></a>--}}
-{{--                        <ul class="submenu">--}}
-{{--                            <li><a href="">Apartment</a></li>--}}
-{{--                            <li><a href="">Villa</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </li>--}}
+                    <li class="downloadMenu">
+                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Luxury Living <span class="caret"></span></a>
+                        <ul class="submenu">
+                            <li><a wire:navigate href="{{route('front.villa')}}">Villa House</a></li>
+                            <li><a wire:navigate href="{{route('front.apartment')}}">Apartment</a></li>
+                        </ul>
+                    </li>
                     <li class="downloadMenu">
                         <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Download <span class="caret"></span></a>
                         <ul class="submenu">

@@ -25,6 +25,8 @@ Route::group(['prefix' => '', 'name' => 'front.', 'as' => 'front.'], function ()
     Route::get('/facilities', \App\Livewire\Facilities::class)->name('facilities');
     Route::get('/faq', \App\Livewire\Faq::class)->name('faq');
     Route::get('/events', \App\Livewire\Events::class)->name('events');
+    Route::get('/luxury-living/villa', \App\Livewire\Villa::class)->name('villa');
+    Route::get('/luxury-living/apartment', \App\Livewire\Apartment::class)->name('apartment');
 });
 Route::get('/clear-cache', function () {
     $clearcache = \Illuminate\Support\Facades\Artisan::call('cache:clear');
