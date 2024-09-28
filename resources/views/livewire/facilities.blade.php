@@ -13,8 +13,8 @@
     <div class="section py-5">
         <div class="container">
             <div class="row gy-4 justify-content-between features-item">
-                <div class="col-md-6 wow fadeInLeft">
-                    <img src="{{asset('client/assets/facility/Unparallel.svg')}}" class="img-fluid" alt="" style="max-height: 400px">
+                <div class="col-md-6 wow fadeInLeft text-center">
+                    <img src="{{asset('client/assets/facility/Unparallel.png')}}" class="img-fluid unparallel-img" alt="" style="">
                 </div>
                 <div class="col-md-6 d-flex align-items-center wow fadeInRight">
                     <div class="content ps-lg-5 p-2">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight">
                     <div class="ps-lg-5 ">
-                        <img src="{{asset('client/assets/facility/Top_Notch.svg')}}" class="img-fluid" alt="" style="max-height: 520px">
+                        <img src="{{asset('client/assets/facility/Top_Notch.png')}}" class="img-fluid" alt="" >
                     </div>
                 </div>
             </div>
@@ -53,18 +53,18 @@
         <div class="container">
             <div class="row gy-4 justify-content-between features-item">
                 <div class="col-md-6 wow fadeInLeft">
-                    <div class="ps-lg-5">
-                        <img src="{{asset('client/assets/facility/Medical_Facility.svg')}}" class="img-fluid" alt="" style="padding-top: 40px; max-height: 650px">
+                    <div class="ps-lg-5 text-center">
+                        <img src="{{asset('client/assets/facility/Medical_Facility.png')}}" class="img-fluid medical-img" alt="" style="">
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center wow fadeInRight">
                     <div class="content p-2 ps-lg-5">
                         <h3 class="mb-4 text-swajan">Medical Facilities</h3>
                         <p class="text-justify mb-2 fs-16">
-                            Our medical facilities prioritize our residents' health and well-being by providing frequent check-ups, supervision, and preventive treatment. We offer 24/7 emergency care with swift response teams and doctors on call. Our on-site health care services include a fully equipped comfort care unit that ensures fast access to critical care when needed. Our campus also features a dedicated rehabilitation center for seniors, offering specialized programs such as neuro rehab, cardiac rehab, diabetic care, and orthocare. We have a pathology lab and radiological services to ensure appropriate diagnosis and treatment. Regular health screenings and ongoing monitoring are integral to our commitment to providing the best level of care.
+                            Our medical facilities prioritize our residents' health and well-being by providing frequent check-ups, supervision, and preventive treatment. We offer 24/7 emergency care with swift response teams and doctors on call. Our on-site health care services include a fully equipped comfort care unit that ensures fast access to critical care when needed. Our campus also features a dedicated rehabilitation center for seniors, offering specialized programs such as neuro rehab, cardiac rehab, diabetic care, and orthocare. Regular health screenings and ongoing monitoring are integral to our commitment to providing the best level of care.
                         </p>
                         <p class="text-justify mb-2 fs-16">
-                            Our community is deeply committed to the health and well-being of our residents, ensuring they receive the highest standard of medical care through our state-of-the-art facilities and comprehensive services. We prioritize proactive and preventive care, offering a wide range of medical services designed to keep our residents healthy and thriving. Frequent health check-ups and continuous supervision help monitor our residents' health and catch any issues early. Our preventive care programs are tailored to each resident's needs, focusing on maintaining optimal health and preventing the onset of illnesses.
+                            Our community is deeply committed to the health and well-being of our residents, ensuring they receive the highest standard of medical care through our state-of-the-art facilities and comprehensive services.
                         </p>
                     </div>
                 </div>
@@ -261,6 +261,35 @@
                 <div class="col-md-6 wow fadeInRight">
                     <div class="ps-lg-5">
                         <img src="{{asset('client/assets/facility/Green_Swajan.svg')}}" class="img-fluid mt-2" alt="" style="max-height: 370px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row gy-4 justify-content-between features-item">
+                <div class="col-md-6 wow fadeInLeft">
+                    <div class="">
+                        <img src="{{asset('client/assets/facility/Yoga_Meditation.jpeg')}}" class="img-fluid" alt="" style=" border-radius: 15px">
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center wow fadeInRight">
+                    <div class="content ps-lg-5 p-2">
+                        <h3 class="mb-4 text-swajan" style="font-size: 1.65rem">Wellness Retreat Centre: Launching Soon!</h3>
+                        <p class="text-justify mb-3 fs-16">
+                            Discover a sanctuary of tranquility and well-being at the new Wellness Retreat Centre at Swajan Community Living. Designed to nurture both body and mind, our center offers a variety of integrated wellness services tailored to promote holistic health. Experience the healing benefits of Ayurvedic treatments using natural herbs, and find inner peace through our guided meditation sessions and yoga classes. Each of these offerings is carefully crafted to restore balance, reduce stress, and enhance your overall sense of well-being. Our integrated services include:
+                        </p>
+                        <ul class="ms-5 mb-2">
+                            <li style="list-style-type: disc; color: #4a4a4a">Ayurvedic treatments</li>
+                            <li style="list-style-type: disc; color: #4a4a4a">Meditation & Yoga</li>
+                            <li style="list-style-type: disc; color: #4a4a4a">Weight management programs</li>
+                            <li style="list-style-type: disc; color: #4a4a4a">Physical therapies
+                                <ul>
+                                    <li style=" color: #4a4a4a; margin-left: 45px; font-size: 14px; list-style-type: square">Full-body massage, Turmeric therapy, Mud therapy, Acupressure & Acupuncture.</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

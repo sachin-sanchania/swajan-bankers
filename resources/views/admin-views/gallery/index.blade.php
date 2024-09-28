@@ -66,9 +66,13 @@
                         render: function ( data, type, row ) {
                             if(row.image_path == "null" || row.image_path === null || row.image_path == ""){
                                 return '<img src="../assets/img/no-avtar.jpeg" height=50 width=50>';
-
                             }else{
-                                return '<img src="../uploads/gallery/thumbnails/'+convertImageName(row.image_path)+'" height=50 width=50>';
+                                if(row.type != 'video'){
+                                    return '<img src="../uploads/gallery/thumbnails/'+convertImageName(row.image_path)+'" height=50 width=50>';
+                                }else{
+                                    return '<video src="../uploads/gallery/'+(row.image_path)+'#t=5" height=50 width=50></video>';
+                                }
+
                             }
                         },
                         className:'text-center', orderable: false, searchable: false

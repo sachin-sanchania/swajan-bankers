@@ -9,7 +9,9 @@
             </div>
         </div>
     </div>
-
+    @php
+        $settings = \App\Models\Settings::all()->pluck('value', 'key');
+    @endphp
     <div class="contact-page section">
         <div class="container">
             <div class="row">
@@ -23,7 +25,7 @@
                         <div class="col-lg-12">
                             <div class="item phone">
                                 <img src="{{asset('client/assets/images/phone-icon.png')}}" alt="" style="max-width: 52px;">
-                                <h6>{{config('app.bankers_phone')}}<br><span>Phone Number</span></h6>
+                                <h6>{!! nl2br($settings->get('contact_no')) ?? '' !!}<br><span >Phone Number</span></h6>
                             </div>
                         </div>
                         <div class="col-lg-12">

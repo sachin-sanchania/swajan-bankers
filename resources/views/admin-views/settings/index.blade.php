@@ -59,7 +59,7 @@
                             <div class="form-group row">
                                 <label class="col-md-2 col-form-label text-right"> Contact No. <span class="text-danger">*</span> </label>
                                 <div class="col-md-4">
-                                    <input type="text" name="contact_no" id="contact_no" placeholder="Enter Contact No. Here For eg. +91 123456789" class="form-control" value="{{$data['contact_no']??''}}" tabindex="5" >
+                                    <textarea name="contact_no" id="contact_no" placeholder="Enter Contact No. Here For eg. +91 123456789" class="form-control" tabindex="5" >{{($data['contact_no'])??''}}</textarea>
                                 </div>
                                 <label class="col-md-2 col-form-label text-right"> Contact Email <span class="text-danger">*</span></label>
                                 <div class="col-md-4">

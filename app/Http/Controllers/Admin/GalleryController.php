@@ -59,15 +59,7 @@ class GalleryController extends Controller
                 $galleryImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
                 $image->move($destinationPath, $galleryImage);
                 $imagePath = $galleryImage;
-                if ($request->type == 'video') {
-                    $video = new VideoThumbnail();
-                    $video->createThumbnail(
-                        public_path($destinationPath . $galleryImage),
-                        public_path($destinationPath . 'thumbnails/' . $galleryImage),
-                        $galleryImage,
-                        2,
-                    );
-                } else{
+                if ($request->type != 'video') {
                     $fullPath = $destinationPath.$imagePath;
                     $multiSizeImage = new MultiSizeImage();
                     $multiSizeImage->processImage($fullPath, 'uploads/gallery/thumbnails/');

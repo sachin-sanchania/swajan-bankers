@@ -90,7 +90,7 @@
             $(document).on('change', '#type', function (e) {
                 if ($(this).val()==='video'){
                     $("#labelUpload").text('Video');
-                    $("#image_path").attr('accept',"video/mp4,video/x-m4v,video/*");
+                    $("#image_path").attr('accept',"video/mp4");
                 }else{
                     $("#labelUpload").text('Image');
                     $("#image_path").attr('accept',"image/png, image/jpeg");

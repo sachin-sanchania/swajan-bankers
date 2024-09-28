@@ -70,12 +70,36 @@
                 </a>
                 <!-- ***** Logo End ***** -->
                 <!-- ***** Menu Start ***** -->
-                <ul class="nav rs-nav">
+                <ul class="nav rs-nav nav-pills ">
                     <li><a wire:navigate href="{{route('front.index')}}" class="{{ Request::routeIs('front.index') ? 'active' : '' }}">Home</a></li>
                     <li><a wire:navigate href="{{route('front.about-us')}}" class="{{ Request::routeIs('front.about-us') ? 'active' : '' }}">About Us</a></li>
                     <li><a wire:navigate href="{{route('front.gallery')}}" class="{{ Request::routeIs('front.gallery') ? 'active' : '' }}">Gallery</a></li>
                     <li><a wire:navigate href="{{route('front.facilities')}}" class="{{ Request::routeIs('front.facilities') ? 'active' : '' }}">Facilities</a></li>
-                    <li><a href="uploads/brochure/{{$settings->get('brochure_path')}}" download="Swajan_Brochure.pdf" >Brochure</a></li>
+{{--                    <li>--}}
+{{--                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Luxury Living <span class="caret"></span></a>--}}
+{{--                        <ul class="submenu">--}}
+{{--                            <li><a href="">Apartment</a></li>--}}
+{{--                            <li><a href="">Villa</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+                    <li class="downloadMenu">
+                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Download <span class="caret"></span></a>
+                        <ul class="submenu">
+                            <li><a href="uploads/brochure/{{$settings->get('brochure_path')}}" target="_blank">Brochure</a></li>
+                            <li><a href="{{asset('RERA-Certificate-Swajan.pdf')}}" target="_blank">RERA Certificate</a></li>
+                            <li><a href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" target="_blank">Inaugural Offer</a></li>
+                        </ul>
+                    </li>
+{{--                    <li class="nav-item dropdown">--}}
+{{--                        <a href="javascript:void(0)" class="nav-link has-submenu dropdown-toggle dropdown-plus" id="downloadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                            Download <span class="caret"></span>--}}
+{{--                        </a>--}}
+{{--                        <ul class="dropdown-menu submenu" aria-labelledby="downloadDropdown">--}}
+{{--                            <li><a class="dropdown-item" href="uploads/brochure/{{$settings->get('brochure_path')}}" target="_blank">Brochure</a></li>--}}
+{{--                            <li><a class="dropdown-item" href="{{asset('RERA-Certificate-Swajan.pdf')}}" target="_blank">RERA Certificate</a></li>--}}
+{{--                            <li><a class="dropdown-item" href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" target="_blank">Inaugural Offer</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
                     <li><a wire:navigate href="{{route('front.faq')}}" class="{{ Request::routeIs('front.faq') ? 'active' : '' }}">FAQ</a></li>
                     <li><a wire:navigate href="{{route('front.contact-us')}}" class="{{ Request::routeIs('front.contact-us') ? 'active' : '' }}">Contact Us</a></li>
                 </ul>
@@ -136,10 +160,13 @@
                                     <h4 class="widget-title text-swajan mb-4">Download</h4>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
-                                            <a href="uploads/brochure/{{$settings->get('brochure_path')}}" download="Swajan_Brochure.pdf" class="link-secondary text-decoration-none">Brochure</a>
+                                            <a href="uploads/brochure/{{$settings->get('brochure_path')}}"  class="link-secondary text-decoration-none">Brochure</a>
                                         </li>
                                         <li class="mb-2">
-                                            <a href="{{asset('RERA-Certificate-Swajan.pdf')}}" download="" class="link-secondary text-decoration-none">RERA Certificate</a>
+                                            <a href="{{asset('RERA-Certificate-Swajan.pdf')}}"  class="link-secondary text-decoration-none">RERA Certificate</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" class="link-secondary text-decoration-none">Inaugural Offer</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -157,7 +184,7 @@
                                         <li class="mb-2" style="display: table;">
                                             <a href="tel:{{str_replace(' ', '', $settings->get('contact_no'))}}" class="link-secondary text-decoration-none">
                                                 <span class="fa fa-phone" style="display: table-cell; width: 35px"></span>
-                                                <span class="" style="display: table-cell">{{$settings->get('contact_no') ?? ''}}</span>
+                                                <span class="" style="display: table-cell">{!! nl2br($settings->get('contact_no')) ?? '' !!}</span>
                                             </a>
                                         </li>
                                         <li class="mb-2" style="display: table;">
@@ -177,9 +204,9 @@
                 <div class="py-4 border-top border-light-subtle" style="border-color: #d5d5d5 !important">
                     <div class="container-fluid overflow-hidden">
                         <div class="row gy-4 gy-md-0 align-items-md-center">
-                            <div class="col-xs-12 col-md-7 order-1 order-md-0">
-                                <div class="copyright text-center text-md-start">
-                                    &copy; 2024. All Rights Reserved.
+                            <div class="col-xs-12 col-md-12 order-1 order-md-0">
+                                <div class="copyright text-center text-md-center">
+                                    &copy; 2024. All Rights Reserved. Developed By <a href="https://webuildbrands.in" class="text-swajan" target="_blank">We Build Brands</a>
                                 </div>
                             </div>
 
@@ -240,6 +267,7 @@
 <script src="{{asset('client/assets/js/custom.js')}}"></script>
 <script src="{{asset('client/assets/js/jquery-magnific-popup.min.js')}}"></script>
 <script src="{{asset('client/assets/js/wow.min.js')}}"></script>
+<script src="{{asset('client/assets/js/lazysizes.min.js')}}" async></script>
 <script>
 
     $(window).scroll(function() {
@@ -265,6 +293,30 @@
         }
     );
     wow.init();
+
+    const downloadMenu = document.querySelector('.downloadMenu');
+    const submenu = downloadMenu.querySelector('.submenu');
+
+    downloadMenu.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (submenu.style.display === "none" || submenu.style.display === "") {
+            submenu.style.display = "inline-block";
+        } else {
+            submenu.style.display = "none";
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!downloadMenu.contains(event.target)) {
+            submenu.style.display = "none";
+        }
+    });
+    document.querySelectorAll('.submenu a').forEach(function(el) {
+        el.addEventListener('click', function(event) {
+            event.stopPropagation();
+            // Allow default behavior (download or navigation)
+        });
+    });
 </script>
 @livewireScripts
 @if(Request::routeIs('front.index'))
@@ -277,45 +329,20 @@
             const videoContainer = document.getElementById('video-container');
             videoContainer.innerHTML = '<iframe width="100%" height="500" src="{{asset('client/assets/videos/Swajan_View.mp4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         });
+
+        document.getElementById('video-thumbnail-launch').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container-launch');
+            videoContainer.innerHTML = '<iframe width="100%" height="385" src="{{asset('client/assets/launch/Video.MP4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        });
+        document.getElementById('play-button-launch').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container-launch');
+            videoContainer.innerHTML = '<iframe width="100%" height="385" src="{{asset('client/assets/launch/Video.MP4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        });
+
     </script>
 @endif
 
-    <script>
-        document.addEventListener('initializeMagnificPopup', function (event) {
-            $('.properties-box').magnificPopup({
-                delegate: 'a',
-                gallery: {
-                    enabled: true,
-                    preload: [0,1]
-                },
-                callbacks: {
-                    elementParse: function(item) {
-                        if (item.el.attr('data-type') === 'video') {
-                            item.type = 'iframe';
-                        } else {
-                            item.type = 'image';
-                        }
-                    }
-                },
-                image: {
-                    titleSrc: function(item) {
-                        return item.el.find('.caption').text();
-                    }
-                },
-                iframe: {
-                    patterns: {
-                        video: {
-                            index: '', // Regular expression used to determine if the link is a video
-                            id: function(url) {
-                                return url;
-                            },
-                            src: '%id%' // URL with %id% replaced by the captured group from the id function
-                        }
-                    }
-                }
-            });
-        });
-    </script>
+
 
 </body>
 </html>

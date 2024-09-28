@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <span class="breadcrumb"><a href="{{route('front.index')}}" wire:navigate>Home</a>  /  About Us</span>
-                    <h3>Elegant Living, Serene Aging</h3>
+                    <h3>Luxurious Comfort Living For Senior Citizens</h3>
                 </div>
             </div>
         </div>
