@@ -75,7 +75,7 @@
                     <li><a wire:navigate href="{{route('front.about-us')}}" class="{{ Request::routeIs('front.about-us') ? 'active' : '' }}">About Us</a></li>
                     <li><a wire:navigate href="{{route('front.gallery')}}" class="{{ Request::routeIs('front.gallery') ? 'active' : '' }}">Gallery</a></li>
                     <li><a wire:navigate href="{{route('front.facilities')}}" class="{{ Request::routeIs('front.facilities') ? 'active' : '' }}">Facilities</a></li>
-                    <li class="downloadMenu">
+                    <li class="downloadMenuLiving">
                         <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Luxury Living <span class="caret"></span></a>
                         <ul class="submenu">
                             <li><a wire:navigate href="{{route('front.villa')}}">Villa House</a></li>
@@ -90,16 +90,6 @@
                             <li><a href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" target="_blank">Inaugural Offer</a></li>
                         </ul>
                     </li>
-{{--                    <li class="nav-item dropdown">--}}
-{{--                        <a href="javascript:void(0)" class="nav-link has-submenu dropdown-toggle dropdown-plus" id="downloadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                            Download <span class="caret"></span>--}}
-{{--                        </a>--}}
-{{--                        <ul class="dropdown-menu submenu" aria-labelledby="downloadDropdown">--}}
-{{--                            <li><a class="dropdown-item" href="uploads/brochure/{{$settings->get('brochure_path')}}" target="_blank">Brochure</a></li>--}}
-{{--                            <li><a class="dropdown-item" href="{{asset('RERA-Certificate-Swajan.pdf')}}" target="_blank">RERA Certificate</a></li>--}}
-{{--                            <li><a class="dropdown-item" href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" target="_blank">Inaugural Offer</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </li>--}}
                     <li><a wire:navigate href="{{route('front.faq')}}" class="{{ Request::routeIs('front.faq') ? 'active' : '' }}">FAQ</a></li>
                     <li><a wire:navigate href="{{route('front.contact-us')}}" class="{{ Request::routeIs('front.contact-us') ? 'active' : '' }}">Contact Us</a></li>
                 </ul>
@@ -151,6 +141,9 @@
                                         </li>
                                         <li class="mb-2">
                                             <a href="{{route('front.faq')}}" wire:navigate class="link-secondary text-decoration-none">FAQs</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="{{route('front.contact-us')}}" wire:navigate class="link-secondary text-decoration-none">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -294,6 +287,7 @@
     );
     wow.init();
 
+    //Downloadmenu relatec js
     const downloadMenu = document.querySelector('.downloadMenu');
     const submenu = downloadMenu.querySelector('.submenu');
 
@@ -311,12 +305,33 @@
             submenu.style.display = "none";
         }
     });
+
+    //DownloadmenuLiving relatec js
+    const downloadMenuLiving = document.querySelector('.downloadMenuLiving');
+    const submenuLiving = downloadMenu.querySelector('.submenu');
+
+    downloadMenu.addEventListener('click', function (event) {
+        event.preventDefault();
+        if (submenuLiving.style.display === "none" || submenuLiving.style.display === "") {
+            submenuLiving.style.display = "inline-block";
+        } else {
+            submenuLiving.style.display = "none";
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!downloadMenuLiving.contains(event.target)) {
+            submenuLiving.style.display = "none";
+        }
+    });
+
     document.querySelectorAll('.submenu a').forEach(function(el) {
         el.addEventListener('click', function(event) {
             event.stopPropagation();
             // Allow default behavior (download or navigation)
         });
     });
+
 </script>
 @livewireScripts
 @if(Request::routeIs('front.index'))
@@ -339,6 +354,37 @@
             videoContainer.innerHTML = '<iframe width="100%" height="385" src="{{asset('client/assets/launch/Video.MP4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         });
 
+        document.getElementById('video-thumbnail-launch-video').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container-launch-video');
+            videoContainer.innerHTML = '<iframe width="100%" height="385" src="{{asset('client/assets/launch/Video_2.mp4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        });
+        document.getElementById('play-button-launch-video').addEventListener('click', function () {
+            const videoContainer = document.getElementById('video-container-launch-video');
+            videoContainer.innerHTML = '<iframe width="100%" height="385" src="{{asset('client/assets/launch/Video_2.mp4')}}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        });
+
+        var carousel = document.getElementById('carouselExampleLaunchVideo');
+        var playButtonLaunch = document.getElementById('play-button-launch');
+        var playButtonLaunchVideo = document.getElementById('play-button-launch-video');
+        var carouselInstance = new bootstrap.Carousel(carousel);
+
+        function pauseCarousel() {
+            carouselInstance.pause();
+        }
+
+        function resumeCarousel() {
+            carouselInstance.cycle();
+        }
+
+        playButtonLaunch.addEventListener('click', function() {
+            pauseCarousel();
+            // Your video play logic here
+        });
+
+        playButtonLaunchVideo.addEventListener('click', function() {
+            pauseCarousel();
+            // Your video play logic here
+        });
     </script>
 @endif
 

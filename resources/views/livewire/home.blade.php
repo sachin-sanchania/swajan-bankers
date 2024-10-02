@@ -173,11 +173,38 @@
                                         <div class="section-heading my-4">
                                             <h6>| Watch Our Launching Video</h6>
                                         </div>
-                                        <div class="video-frame " id="video-container-launch" style="position: relative;">
-                                            <img src="{{ asset('client/assets/launch/Video_Thumb.png') }}" alt="Video Thumbnail" id="video-thumbnail-launch" style="width: 100%; cursor: pointer;">
-                                            <a href="javascript:void(0);" id="play-button-launch" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                                                <i class="fa fa-play" style="font-size: 48px; color: white;"></i>
-                                            </a>
+
+                                        <div id="carouselExampleLaunchVideo" class="carousel slide" data-bs-pause="false" data-bs-ride="carousel" data-bs-interval="2000">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleLaunchVideoCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleLaunchVideoCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <div class="video-frame " id="video-container-launch" style="position: relative;">
+                                                        <img src="{{ asset('client/assets/launch/Video_Thumb.png') }}" alt="Video Thumbnail" id="video-thumbnail-launch" style="width: 100%; cursor: pointer;">
+                                                        <a href="javascript:void(0);" id="play-button-launch" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                            <i class="fa fa-play" style="font-size: 48px; color: white;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="video-frame " id="video-container-launch-video" style="position: relative;">
+                                                        <img src="{{ asset('client/assets/launch/Video_Thumb_3.png') }}" alt="Video Thumbnail" id="video-thumbnail-launch-video" style="width: 100%; cursor: pointer;">
+                                                        <a href="javascript:void(0);" id="play-button-launch-video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                            <i class="fa fa-play" style="font-size: 48px; color: white;"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLaunchVideo" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLaunchVideo" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
