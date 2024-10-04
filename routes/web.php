@@ -27,6 +27,7 @@ Route::group(['prefix' => '', 'name' => 'front.', 'as' => 'front.'], function ()
     Route::get('/events', \App\Livewire\Events::class)->name('events');
     Route::get('/luxury-living/villa', \App\Livewire\Villa::class)->name('villa');
     Route::get('/luxury-living/apartment', \App\Livewire\Apartment::class)->name('apartment');
+    Route::get('/download/{type}', \App\Livewire\Download::class)->where('type', 'brochure|inaugural-offer|rera-certificate')->name('download');
 });
 Route::get('/clear-cache', function () {
     $clearcache = \Illuminate\Support\Facades\Artisan::call('cache:clear');

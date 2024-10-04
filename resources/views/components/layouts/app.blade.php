@@ -85,9 +85,9 @@
                     <li class="downloadMenu">
                         <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Download <span class="caret"></span></a>
                         <ul class="submenu">
-                            <li><a href="uploads/brochure/{{$settings->get('brochure_path')}}" target="_blank">Brochure</a></li>
-                            <li><a href="{{asset('RERA-Certificate-Swajan.pdf')}}" target="_blank">RERA Certificate</a></li>
-                            <li><a href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" target="_blank">Inaugural Offer</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'brochure'])}}" wire:navigate>Brochure</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'rera-certificate'])}}" wire:navigate>RERA Certificate</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" wire:navigate>Inaugural Offer</a></li>
                         </ul>
                     </li>
                     <li><a wire:navigate href="{{route('front.faq')}}" class="{{ Request::routeIs('front.faq') ? 'active' : '' }}">FAQ</a></li>
@@ -153,13 +153,13 @@
                                     <h4 class="widget-title text-swajan mb-4">Download</h4>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
-                                            <a href="uploads/brochure/{{$settings->get('brochure_path')}}"  class="link-secondary text-decoration-none">Brochure</a>
+                                            <a href="{{route('front.download', ['type' => 'brochure'])}}" class="link-secondary text-decoration-none" wire:navigate>Brochure</a>
                                         </li>
                                         <li class="mb-2">
-                                            <a href="{{asset('RERA-Certificate-Swajan.pdf')}}"  class="link-secondary text-decoration-none">RERA Certificate</a>
+                                            <a href="{{route('front.download', ['type' => 'rera-certificate'])}}" class="link-secondary text-decoration-none" wire:navigate>RERA Certificate</a>
                                         </li>
                                         <li class="mb-2">
-                                            <a href="{{asset('RENTAL SWAJAN INAUGURAL OFFER VILLA & APT.pdf')}}" class="link-secondary text-decoration-none">Inaugural Offer</a>
+                                            <a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" class="link-secondary text-decoration-none" wire:navigate>Inaugural Offer</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -287,17 +287,17 @@
     );
     wow.init();
 
-    //Downloadmenu relatec js
-    const downloadMenu = document.querySelector('.downloadMenu');
-    const submenu = downloadMenu.querySelector('.submenu');
+    // Avoid redeclaring the variable by checking if it's already declared
+    if (!window.downloadMenu) {
+        window.downloadMenu = document.querySelector('.downloadMenu');
+    }
+    if (!window.submenu) {
+        window.submenu = document.querySelector('.submenu');
+    }
 
     downloadMenu.addEventListener('click', function (event) {
         event.preventDefault();
-        if (submenu.style.display === "none" || submenu.style.display === "") {
-            submenu.style.display = "inline-block";
-        } else {
-            submenu.style.display = "none";
-        }
+        submenu.style.display = (submenu.style.display === "none" || submenu.style.display === "") ? "inline-block" : "none";
     });
 
     document.addEventListener('click', function(event) {
@@ -306,17 +306,21 @@
         }
     });
 
-    //DownloadmenuLiving relatec js
-    const downloadMenuLiving = document.querySelector('.downloadMenuLiving');
-    const submenuLiving = downloadMenuLiving.querySelector('.submenu');
+    // For downloadMenuLiving
+    if (!window.downloadMenuLiving) {
+        window.downloadMenuLiving = document.querySelector('.downloadMenuLiving');
+    }
+
+    if (!window.downloadMenuLiving) {
+        window.downloadMenuLiving = document.querySelector('.downloadMenuLiving');
+    }
+    if (!window.submenuLiving) {
+        window.submenuLiving = document.querySelector('.submenu');
+    }
 
     downloadMenuLiving.addEventListener('click', function (event) {
         event.preventDefault();
-        if (submenuLiving.style.display === "none" || submenuLiving.style.display === "") {
-            submenuLiving.style.display = "inline-block";
-        } else {
-            submenuLiving.style.display = "none";
-        }
+        submenuLiving.style.display = (submenuLiving.style.display === "none" || submenuLiving.style.display === "") ? "inline-block" : "none";
     });
 
     document.addEventListener('click', function(event) {
