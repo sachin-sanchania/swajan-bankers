@@ -308,9 +308,9 @@
 
     //DownloadmenuLiving relatec js
     const downloadMenuLiving = document.querySelector('.downloadMenuLiving');
-    const submenuLiving = downloadMenu.querySelector('.submenu');
+    const submenuLiving = downloadMenuLiving.querySelector('.submenu');
 
-    downloadMenu.addEventListener('click', function (event) {
+    downloadMenuLiving.addEventListener('click', function (event) {
         event.preventDefault();
         if (submenuLiving.style.display === "none" || submenuLiving.style.display === "") {
             submenuLiving.style.display = "inline-block";
