@@ -85,9 +85,9 @@
                     <li class="downloadMenu">
                         <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Brochures <span class="caret"></span></a>
                         <ul class="submenu">
-                            <li><a href="{{route('front.download', ['type' => 'swajan-brochure'])}}" id="swajanBrochureDownload" wire:navigate download>Swajan Brochure</a></li>
-                            <li><a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" wire:navigate onclick="window.open(this.href); return false;">Inaugural Offer</a></li>
-                            <li><a href="{{route('front.download', ['type' => 'rera-certificate'])}}" wire:navigate download>RERA Certificate</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'swajan-brochure'])}}" wire:navigate>Swajan Brochure</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" wire:navigate>Inaugural Offer</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'rera-certificate'])}}" wire:navigate>RERA Certificate</a></li>
                         </ul>
                     </li>
                     <li><a wire:navigate href="{{route('front.faq')}}" class="{{ Request::routeIs('front.faq') ? 'active' : '' }}">FAQ</a></li>
