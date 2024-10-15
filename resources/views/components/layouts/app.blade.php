@@ -83,11 +83,11 @@
                         </ul>
                     </li>
                     <li class="downloadMenu">
-                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Download <span class="caret"></span></a>
+                        <a href="javascript:void(0)" class="has-submenu dropdown-toggle dropdown-plus">Brochures <span class="caret"></span></a>
                         <ul class="submenu">
-                            <li><a href="{{route('front.download', ['type' => 'brochure'])}}" wire:navigate>Brochure</a></li>
-                            <li><a href="{{route('front.download', ['type' => 'rera-certificate'])}}" wire:navigate>RERA Certificate</a></li>
-                            <li><a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" wire:navigate>Inaugural Offer</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'swajan-brochure'])}}" id="swajanBrochureDownload" wire:navigate download>Swajan Brochure</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" wire:navigate onclick="window.open(this.href); return false;">Inaugural Offer</a></li>
+                            <li><a href="{{route('front.download', ['type' => 'rera-certificate'])}}" wire:navigate download>RERA Certificate</a></li>
                         </ul>
                     </li>
                     <li><a wire:navigate href="{{route('front.faq')}}" class="{{ Request::routeIs('front.faq') ? 'active' : '' }}">FAQ</a></li>
@@ -150,16 +150,16 @@
                             </div>
                             <div class="col-12 col-md-3">
                                 <div class="widget">
-                                    <h4 class="widget-title text-swajan mb-4">Download</h4>
+                                    <h4 class="widget-title text-swajan mb-4">Brochures</h4>
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
-                                            <a href="{{route('front.download', ['type' => 'brochure'])}}" class="link-secondary text-decoration-none" wire:navigate>Brochure</a>
-                                        </li>
-                                        <li class="mb-2">
-                                            <a href="{{route('front.download', ['type' => 'rera-certificate'])}}" class="link-secondary text-decoration-none" wire:navigate>RERA Certificate</a>
+                                            <a href="{{route('front.download', ['type' => 'swajan-brochure'])}}" class="link-secondary text-decoration-none" wire:navigate>Swajan Brochure</a>
                                         </li>
                                         <li class="mb-2">
                                             <a href="{{route('front.download', ['type' => 'inaugural-offer'])}}" class="link-secondary text-decoration-none" wire:navigate>Inaugural Offer</a>
+                                        </li>
+                                        <li class="mb-2">
+                                            <a href="{{route('front.download', ['type' => 'rera-certificate'])}}" class="link-secondary text-decoration-none" wire:navigate>RERA Certificate</a>
                                         </li>
                                     </ul>
                                 </div>

@@ -2292,3 +2292,7 @@ body {
 .fs-44{
     font-size: 44px;
 }
+.downloadBtn:hover{
+    color: #a33443 !important;
+    transition: all 0.5s;
+}
