@@ -20,7 +20,7 @@
                         <h6>| Contact Us</h6>
                         <h2>Get In Touch With Us...</h2>
                     </div>
-                    <p>Welcome to Swajan Bankers Community, where ageing is an adventure and every day is filled with joy and comfort. We are here to assist you and answer any questions you may have about our luxurious senior living haven. Reach out to us through any of the following methods:</p>
+                    <p class="mb-2">Welcome to Swajan Bankers Community, where ageing is an adventure and every day is filled with joy and comfort. We are here to assist you and answer any questions you may have about our luxurious senior living haven. Reach out to us through any of the following methods:</p>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="item phone">
@@ -34,6 +34,15 @@
                                 <h6>{{config('app.bankers_email')}}<br><span>Business Email</span></h6>
                             </div>
                         </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-12">
+                            <div class="item email col-md-6">
+                                <img src="{{asset('client/assets/images/qr-code.svg')}}" style="width: 165px">
+                                <p class="text-justify mb-0">Simply scan QR code to access  detailed brochure and discover more. From our services to special features, all information you need is just a scan. </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-6">

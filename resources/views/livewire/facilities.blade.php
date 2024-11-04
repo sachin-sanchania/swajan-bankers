@@ -295,6 +295,172 @@
             </div>
         </div>
     </div>
+    <div class="py-5 bg-gray-facility">
+        <div class="container">
+            <div class="row gy-4 justify-content-between features-item">
+                <div id="carouselDailyRoutine" class="carousel slide" data-interval="2000" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">A Day in the Life at Swajan Community</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            Swajan Community offers a thoughtfully curated daily routine that harmonizes relaxation, engagement, and wellness for seniors, creating a balanced and fulfilling lifestyle. Mornings start with gentle gatherings over tea or coffee, setting a warm, communal tone for the day. The schedule blends enjoyable activities—such as yoga, reading, games, and gardening—with moments of social connection, providing residents a sense of belonging and purpose. Afternoons allow for quiet relaxation after lunch, while evenings are alive with recreational options, from hydro-exercises and outdoor strolls to engaging group games and art sessions. The day winds down with diverse entertainment options like musical nights, laughter sessions, and cultural celebrations, adding vibrant community moments. Special weekly outings around Vadodara bring a refreshing change of scenery, while spiritual activities and wellness programs enrich both body and mind. Swajan Community transforms each day into a celebration, making it a place where residents feel truly at home.
+                                        </p>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">Wellness-Centric Lifestyle</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">Engaging Social Spaces</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">Nutritious, Balanced Meals</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">Weekly Excursions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_1.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">Start your day with healthy wellness.</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            The wellness room at Swajan Community is a spacious, serene setting tailored to enhance residents' physical and mental well-being. Designed for activities like yoga, meditation, and physiotherapy, this room serves as the heart of the morning routine, where seniors can engage in gentle stretches, breathing exercises, and light workouts. The room is equipped with therapy tables, balance balls, and other essential gear, allowing for a variety of exercises that support flexibility, balance, and overall mobility. Soft, ambient lighting and large mirrors contribute to a calming environment, creating a sense of openness and reflection. This dedicated wellness space embodies Swajan’s holistic approach to senior care, ensuring residents start their day feeling revitalized and centered. With its soothing atmosphere and dedicated facilities, the wellness room reflects Swajan’s commitment to promoting active, healthy aging within a tranquil, supportive setting.
+                                        </p>
+                                        <div class="section-heading my-4">
+                                            <h6>| Morning Routine ( 6:30 AM - 9:00 AM )</h6>
+                                        </div>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">6:30-7:00 AM: Tea/Coffee</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">7:00-8:00 AM: Yoga, Meditation & Pranayam</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">8:00-9:00 AM: Physio, Exercise & Walking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_2.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">Morning Leisure and Social Connection: A Place for Bonding and Relaxation</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            The Swajan Community offers a cozy and inviting dining and social space, perfect for a leisurely morning. Starting with a wholesome breakfast from 9:00 to 10:00 AM, residents gather to enjoy a nutritious meal and prepare for the day ahead. Following breakfast, they can unwind with newspaper reading, library visits, or getting lost in a novel, creating a calming start to the morning. From 10:00 AM to noon, the focus shifts to social engagement and mental stimulation through group bonding activities. Games like cards, chess, Scrabble, and Sudoku bring residents together, fostering friendship and camaraderie while keeping minds active. This space is thoughtfully designed to promote both relaxation and meaningful connections, creating an uplifting atmosphere for everyone at Swajan Community.
+                                        </p>
+                                        <div class="section-heading my-4">
+                                            <h6>| Leisure and Bonding ( 9:00 AM - 12:00 PM )</h6>
+                                        </div>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">9:00-10:00 AM: Breakfast</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">10:00-11:00 AM: Newspaper Reading, Library & Novels</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">11:00 AM-12:00 PM: Group Bonding Exercises (Cards, Chess, Scrabble, Sudoku)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_3.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">Afternoon Serenity: Lunch and Relaxation for Rejuvenation</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            The afternoon hours at Swajan Community are a dedicated time for rest, relaxation, and rejuvenation. After enjoying a nutritious lunch from 12:00 to 2:00 PM, residents have the opportunity to unwind in their private, elegantly designed suites. Each room is spacious and bathed in natural light, offering a calming retreat where one can escape the day’s busyness. With comfortable seating areas, cozy beds, and expansive windows that bring in scenic views of the lush surroundings, these rooms are perfect for a quiet afternoon nap or leisurely relaxation.
+                                        </p>
+                                        <p class="text-justify mb-3 fs-16">
+                                            This restful period from 2:00 to 4:00 PM is designed not just for physical rest, but for mental relaxation as well, creating a soothing ambiance that promotes peace of mind and personal reflection.
+                                        </p>
+                                        <div class="section-heading my-4">
+                                            <h6>| Afternoon Relaxation ( 12:00 PM - 04:00 PM )</h6>
+                                        </div>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">12:00-2:00 PM: Lunch</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">2:00-4:00 PM: Afternoon Nap, Relaxation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_4.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">Evening Activities: Relax, Rejuvenate, and Unwind</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            Evenings at Swajan Community are designed for relaxation and social connection. Starting with High Tea at 4 PM, residents enjoy a refreshing break with tea and snacks. From 5 to 6 PM, the pool and jacuzzi offer a chance for gentle exercise or relaxation, while hydro exercises add a refreshing, low-impact activity. Later, from 6 to 7:30 PM, residents can unwind in the garden, participate in organic farming, or enjoy a peaceful outdoor sit-out. The day ends with a communal dinner from 7:30 to 9 PM, fostering friendship and a sense of belonging in this serene environment. As the day transitions into evening, Swajan Community offers a range of refreshing activities for residents to relax, socialize, and recharge.
+                                        </p>
+                                        <div class="section-heading my-4">
+                                            <h6>| Evening Activities ( 04:00 PM - 09:00 PM )</h6>
+                                        </div>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">4:00-5:00 PM: High Tea</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">5:00-6:00 PM: Swimming Pool, Jacuzzi & Hydro Exercises</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">6:00-7:30 PM: Garden/Outdoor Sit-out, Gardening, Organic Vegetable Farming, Leisure Activities</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">7:30-9:00 PM: Dinner</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_5.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 d-flex flex-column justify-content-center">
+                                    <div class="d-md-block text-start content">
+                                        <h3 class="mb-4 text-swajan">Evenings of Joy and Connection at Swajan</h3>
+                                        <p class="text-justify mb-3 fs-16">
+                                            At Swajan Community, nighttime activities are designed to bring joy and relaxation to residents, creating a warm and engaging environment. Starting at 9 PM, residents can enjoy a variety of games, including TV entertainment, Antakshari, Bhajan Sandhya, Tambola, and cozy Movie Nights. These activities encourage social interaction and help residents unwind, fostering a sense of connection and community spirit. On alternate nights, the community embraces laughter and light-hearted fun with sessions like Laughing Club and Musical Chairs, adding a playful vibe to the evening. Residents seeking tranquility can participate in calming sessions like Reiki or engage in supportive counseling. Special nights add an extra touch of creativity and cultural celebration, with activities such as pottery, painting etc.
+                                        </p>
+                                        <div class="section-heading my-4">
+                                            <h6>| Night time Activities ( 09:00 PM - 10:30 PM )</h6>
+                                        </div>
+                                        <ul class="ms-5 mb-2">
+                                            <li style="list-style-type: disc; color: #4a4a4a">9:00 PM onwards: Games (TV, Antakshari, Bhajan Sandhya, Tombola, Movie Night)</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">Alternate Nights: Laughing Club, Musical Chairs, Light Games, Reiki, Counselling</li>
+                                            <li style="list-style-type: disc; color: #4a4a4a">Special Nights: Pottery, Art & Craft, Painting, Drawing, Garba Night, Timbli Night Dance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="{{asset('client/assets/facility/Daily_Activities_6.jpg')}}" class="d-block w-100" style="border-radius: 15px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDailyRoutine" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <div class="py-5">
         <div class="container">
             <img src="{{asset('client/assets/images/Forever_comfort.svg')}}" alt="Forever Comfort">

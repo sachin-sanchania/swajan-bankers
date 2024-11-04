@@ -2296,3 +2296,14 @@ body {
     color: #a33443 !important;
     transition: all 0.5s;
 }
+#carouselDailyRoutine .carousel-indicators{
+    visibility: hidden;
+}
+#carouselDailyRoutine .carousel-control-next, #carouselDailyRoutine .carousel-control-prev{
+    width: 5%;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(95%);
+}
+

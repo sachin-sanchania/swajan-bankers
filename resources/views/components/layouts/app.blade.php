@@ -126,7 +126,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="widget">
                                     <h4 class="widget-title text-swajan mb-4">Explore</h4>
                                     <ul class="list-unstyled">
@@ -148,7 +148,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-3">
+                            <div class="col-12 col-md-2">
                                 <div class="widget">
                                     <h4 class="widget-title text-swajan mb-4">Brochures</h4>
                                     <ul class="list-unstyled">
@@ -187,6 +187,12 @@
                                             </a>
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2">
+                                <div class="widget">
+                                    <h4 class="widget-title text-swajan mb-4">Scan Us</h4>
+                                    <img src="{{asset('client/assets/images/qr-code.svg')}}" style="width: 150px">
                                 </div>
                             </div>
                         </div>
